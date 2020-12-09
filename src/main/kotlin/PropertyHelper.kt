@@ -9,11 +9,10 @@ class PropertyHelper {
         val APPLICATION_PROPERTIES = Properties()
 
         init {
-            val configFile = File(Constants.ENCODER_DIRECTORY_NAME)
+            APPLICATION_PROPERTIES.load(FileInputStream(File(Constants.DEFAULT_CONFIG_FILE_NAME)))
+            val configFile = File(Constants.CONFIG_FILE_NAME)
             if (configFile.exists() && configFile.isFile)
                 APPLICATION_PROPERTIES.load(FileInputStream(configFile))
-            else
-                println("Config file was not found!")
         }
     }
 }
