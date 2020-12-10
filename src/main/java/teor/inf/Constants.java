@@ -12,6 +12,10 @@ public class Constants {
     public static final String DECODER_DIRECTORY = "decoder_dir";
     public static final String DECODER_OUTPUT_DIRECTORY = "decoder_out_dir";
 
+    public static final String BLOCK_SIZE = "block_size";
+    public static final int DEFAULT_BLOCK_SIZE = 20000;
+
+
     public static final String ENCODER_MODE = "Encoder";
 
     public static String ASCII;
